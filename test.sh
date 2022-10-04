@@ -1,3 +1,9 @@
 echo "Hello World!"
-let b=$1+1
-echo $b
+a=$1
+let b=a+1
+if [ $b -gt 10 ]
+    then
+        echo "$b maggiore di 10"
+    else
+        echo "$b minore di 10"
+    fi
